@@ -1,0 +1,19 @@
+@startuml
+abstract class Template_Method.Aset {
++ void showPage()
++ {abstract}void showPageContent()
+}
+class Template_Method.Run {
++ {static} void main(String[])
+}
+class Template_Method.Main {
++ void showPageContent()
+}
+class Template_Method.Lessons {
++ void showPageContent()
+}
+
+
+Template_Method.Aset <|-- Template_Method.Main
+Template_Method.Aset <|-- Template_Method.Lessons
+@enduml

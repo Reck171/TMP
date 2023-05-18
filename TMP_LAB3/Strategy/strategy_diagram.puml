@@ -1,0 +1,37 @@
+@startuml
+class Strategy.Student {
+~ Activity activity
++ void setActivity(Activity)
++ void executeActivity()
+}
+class Strategy.Skate {
++ void doingThings()
+}
+interface Strategy.Activity {
++ void doingThings()
+}
+class Strategy.StudentRunner {
++ {static} void main(String[])
+}
+class Strategy.Doing_Prak {
++ void doingThings()
+}
+
+class Strategy.Studying_at_RTUMIREA {
++ void doingThings()
+}
+
+class Strategy.Party {
++ void doingThings()
+}
+class Strategy.Sleeping {
++ void doingThings()
+}
+
+
+Strategy.Activity <|.. Strategy.Skate
+Strategy.Activity <|.. Strategy.Doing_Prak
+Strategy.Activity <|.. Strategy.Studying_at_RTUMIREA
+Strategy.Activity <|.. Strategy.Party
+Strategy.Activity <|.. Strategy.Sleeping
+@enduml
